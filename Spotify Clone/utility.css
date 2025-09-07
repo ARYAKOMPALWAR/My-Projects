@@ -1,0 +1,97 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+
+justify{
+    justify-content: center;
+}
+
+items-center{
+    align-items: center;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: #121212;
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 5px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+
+
+
+
+/* Dark, cross-browser scrollbars (drop-in) */
+:root {
+  color-scheme: dark;              /* Dark UI controls by default */
+  --sb-size: 12px;                 /* Width/height */
+  --sb-track: #0b0f14;             /* Track color */
+  --sb-thumb: #2b3642;             /* Thumb color */
+  --sb-thumb-hover: #3a495a;       /* Hover color */
+  --sb-thumb-active: #4e6278;      /* Active color */
+  --sb-corner: transparent;        /* Corner fill */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;                                  /* auto | thin | none */
+  scrollbar-color: var(--sb-thumb) var(--sb-track);       /* thumb track */
+}
+
+/* WebKit (Chrome, Edge, Safari, Opera) */
+*::-webkit-scrollbar {
+  width: var(--sb-size);
+  height: var(--sb-size);
+}
+*::-webkit-scrollbar-track {
+  background: var(--sb-track);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--sb-thumb);
+  border-radius: 999px;
+  border: 3px solid var(--sb-track);                      /* creates “padding” */
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--sb-thumb-hover);
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--sb-thumb-active);
+}
+*::-webkit-scrollbar-corner {
+  background: var(--sb-corner);
+}
+
+/* Optional: apply only on specific containers */
+.scrollable {
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--sb-thumb) var(--sb-track);
+}
+.scrollable::-webkit-scrollbar-thumb { background-color: var(--sb-thumb); }
+
+
+
+
